@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="중복확인"
-                android:textSize="13dp"/>
+                android:textSize="13sp"/>
         </LinearLayout>
 
         <EditText
@@ -44,7 +44,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="password (영문 6-10자, 숫자 포함)"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_marginLeft="30dp"/>
 
         <EditText
@@ -52,7 +52,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="비밀번호 확인"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_marginLeft="30dp"/>
 
         <EditText
@@ -60,7 +60,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="이름"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_marginLeft="30dp"/>
 
         <EditText
@@ -68,7 +68,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint="전화번호"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_marginLeft="30dp"/>
 
     </LinearLayout>
