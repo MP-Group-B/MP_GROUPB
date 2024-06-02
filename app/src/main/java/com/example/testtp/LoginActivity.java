@@ -20,11 +20,11 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private FirebaseAuth mFirebaseAuth; //Firebase 인증
-    private DatabaseReference mDatabaseRef; //실시간 데이터 베이스
     private EditText emailInput, pwdInput;
     private TextView registerBtn;
     private Button loginBtn;
+    private Intent intent;
+    FirebaseAuth firebaseAuth;
 
 
     @Override
@@ -32,45 +32,43 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference();
-
         emailInput = findViewById(R.id.emailInput);
         pwdInput = findViewById(R.id.pwdInput);
         registerBtn = findViewById(R.id.registerBtn);
-
-
-        registerBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
+        loginBtn = findViewById(R.id.loginBtn);
 
         loginBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                String strEmail = emailInput.getText().toString();
-                String strPwd = pwdInput.getText().toString();
+                String email = emailInput.getText().toString().trim();
+                String pwd = pwdInput.getText().toString().trim();
+                //firebase의 인스턴스를 가져옴
+                firebaseAuth = firebaseAuth.getInstance();
 
-                mFirebaseAuth.signInWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(LoginActivity.this,
-                        new OnCompleteListener<AuthResult>() {
+                firebaseAuth.signInWithEmailAndPassword(email, pwd)
+                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    // 로그인 성공
+                                    //로그인 성공
                                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(intent);
-                                    finish();
-                                }else{
-                                    Toast.makeText(LoginActivity.this, "로그인 실패", Toast.LENGTH_SHORT).show();
+                                } else{
+                                    //실패했을 때
+                                    Toast.makeText(LoginActivity.this, "로그인 오류", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
             }
         });
 
+        registerBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

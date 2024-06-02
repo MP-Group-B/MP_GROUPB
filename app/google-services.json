@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "214997719068",
-    "project_id": "testtp-c9c52",
-    "storage_bucket": "testtp-c9c52.appspot.com"
+    "project_number": "251277885478",
+    "project_id": "mpteamb",
+    "storage_bucket": "mpteamb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:214997719068:android:1c9b53a98d0bccd47867d9",
+        "mobilesdk_app_id": "1:251277885478:android:5d3ff8b3abc30aac06e6e7",
         "android_client_info": {
           "package_name": "com.example.testtp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDwe6to1rsx_OwTQ8Fudnf0oYeG8omhsko"
+          "current_key": "AIzaSyBNEnBxHuKBZvnTN0XcMmKDQCcLmGwbtTE"
         }
       ],
       "services": {
