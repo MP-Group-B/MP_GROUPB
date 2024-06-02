@@ -11,72 +11,86 @@
         android:src="@drawable/logo"
         android:layout_gravity="center"
         android:layout_marginTop="80dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="520dp"
+        android:layout_height="600dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:hint="e-mail"
+            android:textSize="15dp"
             android:layout_marginTop="90dp"
-            android:layout_marginLeft="30dp">
-
-            <EditText
-                android:id="@+id/emailInput"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:hint="nickname"
-                android:textSize="15dp"/>
-
-            <Button
-                android:id="@+id/checkBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="중복확인"
-                android:textSize="13sp"/>
-        </LinearLayout>
+            android:layout_gravity="center"/>
 
         <EditText
             android:id="@+id/pwdInput"
-            android:layout_width="280dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="password (영문 6-10자, 숫자 포함)"
+            android:hint="password"
             android:textSize="15sp"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"/>
 
-        <EditText
-            android:id="@+id/pwdReInput"
-            android:layout_width="280dp"
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:text="LOGIN"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:background="#747474"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="비밀번호 확인"
-            android:textSize="15sp"
-            android:layout_marginLeft="30dp"/>
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/nameInput"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:hint="이름"
-            android:textSize="15sp"
-            android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginLeft="40dp"/>
 
-        <EditText
-            android:id="@+id/telInput"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:hint="전화번호"
-            android:textSize="15sp"
-            android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/forgotPwdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:layout_marginLeft="170dp"/>
+        </LinearLayout>
 
+        <Button
+            android:id="@+id/kakaoBtn"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Login with Kakaotalk"
+            android:textColor="#000000"
+            android:background="#F5D631"
+            android:layout_marginTop="120dp"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/kakaotalk_img"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/googleBtn"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Login with Google"
+            android:textColor="#000000"
+            android:background="#EEEDE3"
+            android:layout_marginTop="7dp"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/google_img"
+            android:paddingLeft="10dp"/>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/registerBtn"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:text="회원가입"/>
 </LinearLayout>
