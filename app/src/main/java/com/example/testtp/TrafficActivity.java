@@ -7,18 +7,18 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WeatherActivity extends AppCompatActivity {
+public class TrafficActivity extends AppCompatActivity {
     private ImageView trafficBtn, weatherBtn, homeBtn, calendarBtn, hotplaceBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather);
+        setContentView(R.layout.activity_traffic);
 
         init();
         trafficBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WeatherActivity.this, TrafficActivity.class);
+                Intent intent = new Intent(TrafficActivity.this, TrafficActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -27,7 +27,7 @@ public class WeatherActivity extends AppCompatActivity {
         weatherBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(WeatherActivity.this, WeatherActivity.class);
+                Intent intent = new Intent(TrafficActivity.this, WeatherActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -36,7 +36,7 @@ public class WeatherActivity extends AppCompatActivity {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WeatherActivity.this, MainActivity.class);
+                Intent intent = new Intent(TrafficActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -45,7 +45,7 @@ public class WeatherActivity extends AppCompatActivity {
         calendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WeatherActivity.this, CalendarActivity.class);
+                Intent intent = new Intent(TrafficActivity.this, CalendarActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -54,7 +54,7 @@ public class WeatherActivity extends AppCompatActivity {
         hotplaceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WeatherActivity.this, HotplaceActivity.class);
+                Intent intent = new Intent(TrafficActivity.this, HotplaceActivity.class);
                 startActivity(intent);
                 finish();
             }

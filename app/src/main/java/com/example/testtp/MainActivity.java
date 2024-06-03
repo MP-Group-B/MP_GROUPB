@@ -8,16 +8,16 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView mapBtn, weatherBtn, homeBtn, calendarBtn, hotplaceBtn;
+    private ImageView trafficBtn, weatherBtn, homeBtn, calendarBtn, hotplaceBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         init();
-        mapBtn.setOnClickListener(new View.OnClickListener() {
+        trafficBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                Intent intent = new Intent(MainActivity.this, TrafficActivity.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void init(){
-        mapBtn = (ImageView) findViewById(R.id.mapBtn);
+        trafficBtn = (ImageView) findViewById(R.id.trafficBtn);
         weatherBtn = (ImageView) findViewById(R.id.weatherBtn);
         homeBtn = (ImageView) findViewById(R.id.homeBtn);
         calendarBtn = (ImageView) findViewById(R.id.calendarBtn);

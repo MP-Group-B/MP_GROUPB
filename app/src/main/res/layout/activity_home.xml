@@ -1,51 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/app_name"
         android:layout_width="195dp"
         android:layout_height="26dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:src="@drawable/logo"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="28dp"
         tools:ignore="MissingConstraints" />
 
+
     <ImageView
-        android:id="@+id/user"
+        android:id="@+id/user_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/user"
-        tools:layout_editor_absoluteX="371dp"
-        tools:layout_editor_absoluteY="28dp"
-        tools:ignore="MissingConstraints"/>
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="360dp"
+        android:src="@drawable/user" />
 
     <LinearLayout
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="#E0E0E0"
         android:orientation="horizontal"
-        android:padding="5dp"
-        tools:layout_editor_absoluteX="-25dp"
-        tools:layout_editor_absoluteY="671dp"
-        tools:ignore="MissingConstraints">
+        android:background="#E0E0E0"
+        android:padding="5dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
-                android:id="@+id/mapBtn"
+                android:id="@+id/trafficBtn"
                 android:layout_width="36dp"
                 android:layout_height="34dp"
                 android:src="@drawable/nav_img1" />
@@ -53,18 +52,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:text="주변 교통정보"
+                android:textSize="10sp"
                 android:textColor="#000000"
-                android:textSize="10sp" />
+                android:gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/weatherBtn"
@@ -75,18 +74,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:text="주변 날씨 정보"
+                android:textSize="10sp"
                 android:textColor="#000000"
-                android:textSize="10sp" />
+                android:gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/homeBtn"
@@ -97,19 +96,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:text="홈"
                 android:textColor="#000000"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:layout_marginTop="4dp"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/calendarBtn"
@@ -120,18 +119,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:text="캘린더"
+                android:textSize="10sp"
                 android:textColor="#000000"
-                android:textSize="10sp" />
+                android:gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/hotplaceBtn"
@@ -142,12 +141,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:gravity="center"
                 android:text="맛집"
+                android:layout_marginTop="5dp"
+                android:textSize="9sp"
                 android:textColor="#000000"
-                android:textSize="9sp" />
+                android:gravity="center"/>
         </LinearLayout>
     </LinearLayout>
+</RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
