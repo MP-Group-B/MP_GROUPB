@@ -5,32 +5,15 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="주변 교통 정보"
-        android:textSize="14sp"
-        android:textColor="#B0B0B0" />
-
-    <ImageView
-        android:id="@+id/app_name"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/title"
-        android:layout_width="195dp"
-        android:layout_height="26dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="28dp"
-        tools:ignore="MissingConstraints" />
-
-
-
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:id="@+id/navigation_bar"

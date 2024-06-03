@@ -31,13 +31,23 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".TrafficActivity"/>
         <activity android:name=".HotplaceActivity"/>
         <activity android:name=".CalendarActivity"/>
         <activity android:name=".WeatherActivity"/>
+        <activity
+        android:name=".TrafficActivity">
+    </activity>
+        <activity android:name=".BusStopInfoActivity"/>
+        <activity android:name=".BusInfoActivity"/>
     </application>
     <meta-data
         android:name="com.naver.maps.map.CLIENT_ID"
         android:value="lr6avncgak" />
+
+
+
+    <meta-data
+        android:name="com.google.android.actions"
+        android:resource="@xml/network_config" />
 
 </manifest>

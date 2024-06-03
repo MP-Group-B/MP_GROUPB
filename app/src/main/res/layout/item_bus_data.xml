@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/busId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busName"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/busName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/busRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/busName"
+        android:layout_toRightOf="@id/busId"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/favoriteBus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="즐겨찾기"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+</LinearLayout>
