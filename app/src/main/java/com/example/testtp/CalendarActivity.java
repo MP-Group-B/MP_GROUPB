@@ -43,7 +43,8 @@ public class CalendarActivity extends AppCompatActivity
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
         {
             @Override
-            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth)
+            public void onSelectedDayChange(@NonNull CalendarView view, int year,
+                                            int month, int dayOfMonth)
             {
                 diaryTextView.setVisibility(View.VISIBLE);
                 save_Btn.setVisibility(View.VISIBLE);

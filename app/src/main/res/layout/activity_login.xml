@@ -52,45 +52,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/registerBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register"
-                android:layout_marginLeft="40dp"/>
-
-            <TextView
-                android:id="@+id/forgotPwdBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Forgot password?"
-                android:layout_marginLeft="170dp"/>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/kakaoBtn"
-            android:layout_width="260dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:text="Login with Kakaotalk"
-            android:textColor="#000000"
-            android:background="#F5D631"
-            android:layout_marginTop="120dp"
-            android:textAllCaps="false"
-            android:drawableLeft="@drawable/kakaotalk_img"
-            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Register" />
 
-        <Button
-            android:id="@+id/googleBtn"
-            android:layout_width="260dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:text="Login with Google"
-            android:textColor="#000000"
-            android:background="#EEEDE3"
-            android:layout_marginTop="7dp"
-            android:textAllCaps="false"
-            android:drawableLeft="@drawable/google_img"
-            android:paddingLeft="10dp"/>
     </LinearLayout>
 </LinearLayout>

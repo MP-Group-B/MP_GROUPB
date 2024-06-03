@@ -2,30 +2,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
 
-
-    <ImageView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
         android:id="@+id/app_name"
-        android:layout_width="195dp"
-        android:layout_height="26dp"
+        android:layout_width="236dp"
+        android:layout_height="96dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="28dp"
-        tools:ignore="MissingConstraints" />
+        android:src="@drawable/logo"/>
 
+        <TextView
+            android:layout_width="121dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/app_name"
+            android:textSize="20dp"
+            android:text="Decription" />
 
-    <ImageView
-        android:id="@+id/user_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="360dp"
-        android:src="@drawable/user" />
+        <ImageView
+            android:id="@+id/traffic_img"
+            android:layout_width="191dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/app_name"
+            android:src="@drawable/traffic_img" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Regional Traffic Information Page" />
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:layout_width="192dp"
+            android:layout_height="102dp"
+            android:layout_below="@id/app_name"
+            android:src="@drawable/weather_img" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Regional Weather Information Page" />
+
+        <ImageView
+            android:id="@+id/schedule_img"
+            android:layout_width="186dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/app_name"
+            android:src="@drawable/schedule_img" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Schedule Page" />
+
+        <ImageView
+            android:id="@+id/map_img"
+            android:layout_width="204dp"
+            android:layout_height="102dp"
+            android:layout_below="@id/app_name"
+            android:src="@drawable/map_img" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Regional Map Information Page" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/navigation_bar"

@@ -34,8 +34,7 @@
         <activity android:name=".HotplaceActivity"/>
         <activity android:name=".CalendarActivity"/>
         <activity android:name=".WeatherActivity"/>
-        <activity
-        android:name=".TrafficActivity">
+        <activity android:name=".TrafficActivity">
     </activity>
         <activity android:name=".BusStopInfoActivity"/>
         <activity android:name=".BusInfoActivity"/>

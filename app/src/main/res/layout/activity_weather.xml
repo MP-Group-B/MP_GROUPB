@@ -31,6 +31,11 @@
 
 
 
+    <fragment android:name="com.example.testtp.WeatherFragment"
+        android:id="@+id/fragment_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
     <LinearLayout
         android:id="@+id/navigation_bar"
